@@ -1,7 +1,7 @@
 {
   "name": "datasets-us-states-names-abbr",
   "version": "0.0.0",
-  "description": "Mapping between US state names and abbreviations.",
+  "description": "Maps US state names to state abbreviations.",
   "author": {
     "name": "Athan Reines",
     "email": "kgryte@gmail.com"
