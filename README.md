@@ -50,16 +50,9 @@ function getAbbr( state ) {
 		len,
 		i;
 
-	// Ensure the first letter of each word comprising a state name is capitalized...
-	parts = state.split( ' ' );
-	len = parts.length;
-	state = '';
-	for ( i = 0; i < len; i++ ) {
-		state += parts[ i ][ 0 ].toUpperCase() + parts[ i ].substring( 1 );
-		if ( i < len-1 ) {
-			state += ' ';
-		}
-	}
+	// Normalize incoming state name by making it all upper case.
+	state = state.toUpperCase();
+	
 	// Get the state abbreviation:
 	abbr = table[ state ];
 
